@@ -5,12 +5,12 @@ import 'firebase/storage'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-apiKey: "AIzaSyDMnovKAU9YyDiSy4RKBpv7SQmICAOFZ_I",
-  authDomain: "olx-clone-a9518.firebaseapp.com",
-  projectId: "olx-clone-a9518",
-  storageBucket: "olx-clone-a9518.appspot.com",
-  messagingSenderId: "647970707429",
-  appId: "1:647970707429:web:63a87460251ac93aff010c"
+  apiKey: "AIzaSyC4U84N-Thf3ACsUG9lqJ9JQ-WHHy9MaNc",
+  authDomain: "olx-clone-113c4.firebaseapp.com",
+  projectId: "olx-clone-113c4",
+  storageBucket: "olx-clone-113c4.appspot.com",
+  messagingSenderId: "239373925409",
+  appId: "1:239373925409:web:d19d784db3d85822c33760"
 };
 
 // Initialize Firebase

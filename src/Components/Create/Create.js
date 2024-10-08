@@ -1,7 +1,7 @@
 import React, { Fragment, useContext, useState } from 'react';
 import './Create.css';
 import Header from '../Header/Header';
-import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom';
 import {FirebaseContext, AuthContext} from '../../store/Context'
 
 const  Create = () => {
@@ -27,7 +27,7 @@ const  Create = () => {
           userId:user.uid,
           createdAt:date.toDateString()
         })
-        history.push('/')
+        history.push("/")
       })
     })
   }
