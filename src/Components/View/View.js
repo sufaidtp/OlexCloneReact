@@ -3,8 +3,9 @@ import React, { useContext, useEffect, useState } from 'react';
 import './View.css';
 import { PostContext } from '../../store/PostContext';
 import { FirebaseContext } from '../../store/Context';
+
 function View() {
-  const {userDetails, setUserDetails} = useState()
+  const [userDetails, setUserDetails] = useState()
   const {postDetails} = useContext(PostContext)
   const {firebase} = useContext(FirebaseContext)
   useEffect(()=>{
@@ -32,8 +33,8 @@ function View() {
         </div>
        {userDetails && <div className="contactDetails">
           <p>Seller details</p>
-          <p>{userDetails.name}</p>
-          <p>1234567890</p>
+          <p>{userDetails.username}</p>
+          <p>{userDetails.phone}</p>
         </div>}
       </div>
     </div>
