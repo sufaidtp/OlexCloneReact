@@ -10,12 +10,20 @@ function View() {
   const {firebase} = useContext(FirebaseContext)
   useEffect(()=>{
     const {userId} = postDetails
-    firebase.firestore().collection('users').where('id','==',userId).get().then((res)=>{
+    try{firebase.firestore().collection('users').where('id','==',userId).get().then((res)=>{
       res.forEach(doc=>{
+        console.log(doc.data());
+        
         setUserDetails(doc.data())
       })
     })
+  }catch(err){
+    console.log(err);
+    
+  }
   },[])
+  console.log(userDetails);
+  
   return (
     <div className="viewParentDiv">
       <div className="imageShowDiv">
