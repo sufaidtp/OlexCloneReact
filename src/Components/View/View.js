@@ -47,7 +47,7 @@ function View() {
     return <div>Loading post details...</div>;
   }
 
-  const displayPostDetails = postDetails || storedPostDetails; 
+  const displayPostDetails = postDetails || storedPostDetails;
 
   return (
     <div className="viewParentDiv">
