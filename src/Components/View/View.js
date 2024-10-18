@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react';
-
 import './View.css';
 import { PostContext } from '../../store/PostContext';
 import { FirebaseContext } from '../../store/Context';
@@ -10,7 +9,7 @@ function View() {
   const {firebase} = useContext(FirebaseContext)
   useEffect(()=>{
     const {userId} = postDetails
-    try{firebase.firestore().collection('users').where('id','==',userId).get().then((res)=>{
+    try{firebase.firestore().collection('user').where('id','==',userId).get().then((res)=>{
       res.forEach(doc=>{
         console.log(doc.data());
         
@@ -41,7 +40,7 @@ function View() {
         </div>
        {userDetails && <div className="contactDetails">
           <p>Seller details</p>
-          <p>{userDetails.username}</p>
+          <p>{userDetails.userName}</p>
           <p>{userDetails.phone}</p>
         </div>}
       </div>
