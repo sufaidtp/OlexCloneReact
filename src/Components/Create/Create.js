@@ -4,7 +4,7 @@ import Header from '../Header/Header';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom';
 import {FirebaseContext, AuthContext} from '../../store/Context'
 
-const  Create = () => {
+const   Create = () => {
 
   const {firebase} = useContext(FirebaseContext)
   const {user} = useContext(AuthContext)
